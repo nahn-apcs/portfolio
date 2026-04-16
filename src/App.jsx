@@ -7,7 +7,7 @@ import Blog from './pages/Blog';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <div className="relative">
         <Header />
         <SocialSidebar />
