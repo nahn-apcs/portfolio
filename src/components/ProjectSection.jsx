@@ -57,7 +57,7 @@ export default function ProjectSection() {
               <div className="relative w-full shadow-lg aspect-video md:aspect-[4/3] rounded-2xl overflow-hidden border border-white/10 group-hover:border-purple-500/20 group-hover:shadow-[0_0_40px_rgba(216,180,254,0.15)] transition-all duration-700">
                  <a href="https://www.youtube.com/watch?v=trNBoFlZsGE" target="_blank" rel="noreferrer" className="block w-full h-full">
                     <img 
-                      src="/snitches.png" 
+                      src={`${import.meta.env.BASE_URL}snitches.png`} 
                       alt="Snitches Fashion AI Shop" 
                       onError={(e) => { e.target.src = 'https://via.placeholder.com/800x600/111111/333333?text=Ảnh+bị+lỗi'; }}
                       className="w-full h-full object-cover object-top transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"

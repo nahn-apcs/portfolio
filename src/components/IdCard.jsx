@@ -52,7 +52,7 @@ export default function IdCard() {
 
                <div className="relative w-32 h-32 md:w-36 md:h-36 rounded-xl overflow-hidden border border-white/20 bg-white shadow-xl z-10 transition-transform duration-500 group-hover:scale-105">
                   <img
-                     src="/roblox.png"
+                     src={`${import.meta.env.BASE_URL}roblox.png`}
                      alt="Staff Profile"
                      className="w-full h-full object-cover"
                   />
