@@ -83,7 +83,7 @@ const HeroTypography = () => {
 
 export default function HeroSection() {
   return (
-    <section id="home" className="min-h-screen relative flex items-center justify-center pt-20 overflow-hidden">
+    <section id="home" className="min-h-screen relative flex items-center justify-center pt-20">
       <ParticleNetwork />
 
       {/* Siêu phẩm: Khối Thạch Pha Lê Đa Sắc (Multicolored Blob) */}
