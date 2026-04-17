@@ -14,6 +14,7 @@ export default {
         sans: ['Inter', 'sans-serif'],
         display: ['Syne', 'sans-serif'],
         clash: ['Clash Display', 'sans-serif'],
+        serif: ['Playfair Display', 'serif'],
       },
     },
   },
