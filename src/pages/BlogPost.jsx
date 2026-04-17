@@ -7,7 +7,7 @@ import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 import 'katex/dist/katex.min.css';
 import SyntaxHighlighter from 'react-syntax-highlighter';
-import { atomOneDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { vs } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import { getPostBySlug } from '../utils/markdownParser';
 import ParticleNetwork from '../components/ParticleNetwork';
 
@@ -37,7 +37,7 @@ export default function BlogPost() {
       </div>
 
       <div className="max-w-5xl mx-auto w-full relative z-20 flex-1 bg-white rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-neutral-100 p-8 md:p-12 lg:p-16 mb-24">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -72,7 +72,7 @@ export default function BlogPost() {
         </motion.div>
 
         {/* Khối nội dung Typography Markdown chuẩn cho Light Mode */}
-        <motion.article 
+        <motion.article
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.2 }}
@@ -94,29 +94,29 @@ export default function BlogPost() {
                 return <a {...props} target="_blank" rel="noopener noreferrer" />;
               },
               pre({ children }) {
-                return <div className="my-10 rounded-2xl overflow-hidden shadow-[0_12px_40px_rgb(0,0,0,0.12)] border border-neutral-800 bg-[#0F0F0F] relative group z-10">{children}</div>;
+                return <div className="my-10 rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-neutral-200 bg-white relative group z-10">{children}</div>;
               },
-              code({node, inline, className, children, ...props}) {
+              code({ node, inline, className, children, ...props }) {
                 const match = /language-(\w+)/.exec(className || '')
                 return !inline && match ? (
                   <>
-                    <div className="bg-[#0F0F0F] px-5 py-4 flex items-center justify-between border-b border-white/5 relative z-10">
-                      <div className="flex gap-2">
-                        <div className="w-3 h-3 rounded-full bg-[#FF5F56] opacity-90"></div>
-                        <div className="w-3 h-3 rounded-full bg-[#FFBD2E] opacity-90"></div>
-                        <div className="w-3 h-3 rounded-full bg-[#27C93F] opacity-90"></div>
+                    <div className="bg-[#F3F4F6] px-4 py-3 flex items-center gap-2 border-b border-neutral-200 relative z-10">
+                      <div className="flex gap-2 z-10">
+                        <div className="w-3 h-3 rounded-full bg-[#ff5f56] border border-[#e0443e]"></div>
+                        <div className="w-3 h-3 rounded-full bg-[#ffbd2e] border border-[#dea123]"></div>
+                        <div className="w-3 h-3 rounded-full bg-[#27c93f] border border-[#1aab29]"></div>
                       </div>
-                      <div className="text-white/40 text-[11px] font-mono font-medium tracking-wider uppercase">
+                      <div className="absolute inset-x-0 text-center text-slate-500 text-[11px] font-mono font-semibold tracking-widest uppercase">
                         {match[1]}
                       </div>
                     </div>
                     <SyntaxHighlighter
                       {...props}
                       children={String(children).replace(/\n$/, '')}
-                      style={atomOneDark}
+                      style={vs}
                       language={match[1]}
                       PreTag="div"
-                      customStyle={{ margin: 0, padding: '1.5rem', background: 'transparent', fontSize: '14px', lineHeight: '1.7', fontFamily: "'JetBrains Mono', monospace" }}
+                      customStyle={{ margin: 0, padding: '1.5rem', background: '#FFFFFF', fontSize: '0.9rem', lineHeight: '1.7', fontFamily: "'JetBrains Mono', monospace" }}
                     />
                   </>
                 ) : (
