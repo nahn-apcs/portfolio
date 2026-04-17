@@ -88,7 +88,7 @@ export default function AboutSection() {
               animate={isInView ? { opacity: 1, scale: 1, z: 0 } : {}}
               whileHover={{ rotateY: 0, rotateX: 0, scale: 1.02 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="rounded-xl overflow-hidden glass-card shadow-[-30px_30px_60px_rgba(31,38,135,0.08)] font-mono text-[13px] md:text-sm leading-relaxed relative cursor-crosshair"
+              className="rounded-xl overflow-hidden bg-white shadow-[-30px_30px_60px_rgba(31,38,135,0.08)] font-mono text-[13px] md:text-sm leading-relaxed relative cursor-crosshair z-20"
             >
               {/* Ánh sáng chạy ngang kính */}
               <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-neutral-300 to-transparent" />

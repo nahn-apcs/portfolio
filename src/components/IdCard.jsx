@@ -33,7 +33,7 @@ export default function IdCard() {
          <div className="absolute -inset-1 bg-gradient-to-br from-indigo-400/30 via-purple-400/30 to-cyan-400/30 rounded-[2rem] blur-2xl opacity-60 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
 
          {/* Thân thẻ Glassmorphism */}
-         <div className="relative w-full h-full rounded-[2rem] glass-card shadow-[0_20px_50px_rgba(31,38,135,0.07)] flex flex-col font-sans overflow-hidden">
+         <div className="relative w-full h-full rounded-[2rem] bg-white border border-neutral-100 shadow-[0_20px_50px_rgba(31,38,135,0.07)] flex flex-col font-sans overflow-hidden z-20">
 
             {/* Lỗ xỏ dây đeo thẻ */}
             <div className="absolute top-4 left-1/2 -translate-x-1/2 w-14 h-2.5 bg-neutral-200 rounded-full border-b border-neutral-300 shadow-inner z-20" />
@@ -71,7 +71,7 @@ export default function IdCard() {
 
             {/* Chỉ số Lập trình thi đấu thi đấu thực tế (Live Stats) */}
             <div className="px-5 mt-auto mb-6 w-full">
-               <div className="bg-neutral-50 rounded-xl p-3 md:p-3.5 space-y-2.5 border border-neutral-200 shadow-inner backdrop-blur-md">
+               <div className="bg-neutral-50 rounded-xl p-3 md:p-3.5 space-y-2.5 border border-neutral-200 shadow-inner">
 
                   <a href="https://codeforces.com/profile/fan_lamu" target="_blank" rel="noreferrer" className="flex justify-between items-center group/link">
                      <span className="text-[#3b82f6] text-[10px] md:text-[11px] font-bold tracking-widest uppercase">Codeforces</span>
