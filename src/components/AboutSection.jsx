@@ -61,7 +61,7 @@ export default function AboutSection() {
              viewport={{ once: true }}
              className="text-5xl md:text-[5rem] font-clash font-medium text-neutral-900 tracking-tight leading-[1.1] select-none"
            >
-             About <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-purple-800">
+             About <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-sky-600">
                me
              </span>
            </motion.h2>
@@ -110,7 +110,7 @@ export default function AboutSection() {
                   const textToRender = isCurrent ? cmd.text.slice(0, charIdx) : cmd.text;
                   
                   return (
-                    <div key={idx} className={`mb-5 ${cmd.type === 'cmd' ? 'text-purple-700' : 'text-neutral-600'} whitespace-pre-wrap`}>
+                    <div key={idx} className={`mb-5 ${cmd.type === 'cmd' ? 'text-blue-600' : 'text-neutral-600'} whitespace-pre-wrap`}>
                       {cmd.type === 'cmd' ? (
                         <span className="text-[#10b981] font-bold mr-3 tracking-widest">nahn_admin@~ %</span>
                       ) : (
@@ -130,7 +130,7 @@ export default function AboutSection() {
                 
                 {/* Blinking Cursor after complete */}
                 {!isTyping && lineIdx >= commands.length && (
-                   <div className="mt-4 text-purple-700">
+                   <div className="mt-4 text-blue-600">
                       <span className="text-[#10b981] font-bold mr-3 tracking-widest">nahn_admin@~ %</span>
                       <motion.span 
                           animate={{ opacity: [1, 0] }}

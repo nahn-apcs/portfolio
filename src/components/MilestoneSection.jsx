@@ -21,7 +21,7 @@ const milestones = [
     desc: "Earned a Bronze Medal at the ICPC Vietnam National Contest. Specialized in optimizing complex data structures and graph algorithms while delivering high-performance solutions under intense competitive pressure."
   },
   {
-    title: <a href="#cppro" target="_blank" rel="noreferrer" className="hover:text-purple-400 transition-colors underline decoration-purple-500/30 underline-offset-4">CPPro Online Judge</a>,
+    title: <a href="#cppro" target="_blank" rel="noreferrer" className="hover:text-blue-500 transition-colors underline decoration-blue-500/30 underline-offset-4">CPPro Online Judge</a>,
     subtitle: "System Architecture Project",
     year: "NOW",
     desc: "Architecting a high-performance algorithmic evaluation platform from scratch. Utilizing Django, Docker, and Redis to ensure a scalable and secure infrastructure. The system features a containerized C++ sandbox for safe, untrusted code execution, designed to serve the training needs of the CPPros community."
@@ -54,7 +54,7 @@ export default function MilestoneSection() {
              className="text-5xl md:text-[5rem] font-clash font-medium text-neutral-900 tracking-tight leading-[1.1]"
            >
              Honors &<br/>
-             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-purple-800">
+             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-700">
                milestones
              </span>
            </motion.h2>
@@ -64,17 +64,17 @@ export default function MilestoneSection() {
         <div ref={containerRef} className="relative w-full max-w-5xl mx-auto">
            
            {/* Dải nền tối tĩnh */}
-           <div className="absolute left-4 md:left-1/2 top-0 bottom-0 md:-translate-x-1/2 w-[2px] bg-purple-200" />
+           <div className="absolute left-4 md:left-1/2 top-0 bottom-0 md:-translate-x-1/2 w-[2px] bg-blue-100" />
 
            {/* Dải sáng trung tâm dọc MỞ RỘNG dần độ cao theo lineHeight */}
            <motion.div 
-             className="absolute left-4 md:left-1/2 top-0 md:-translate-x-1/2 w-[2px] bg-gradient-to-b from-transparent via-purple-500 to-purple-400 shadow-[0_0_15px_1px_rgba(168,85,247,0.6)]"
+             className="absolute left-4 md:left-1/2 top-0 md:-translate-x-1/2 w-[2px] bg-gradient-to-b from-transparent via-blue-500 to-sky-400 shadow-[0_0_15px_1px_rgba(59,130,246,0.5)]"
              style={{ height: lineHeight }}
            />
            
            {/* Hạt nhân sáng đuổi theo đáy cột sáng (Glowing Dot) */}
            <motion.div 
-             className="absolute left-4 md:left-1/2 w-4 h-4 rounded-full bg-purple-200 shadow-[0_0_20px_5px_rgba(168,85,247,0.9)] z-10 -ml-[7px] md:ml-0 md:-translate-x-1/2 -translate-y-1/2"
+             className="absolute left-4 md:left-1/2 w-4 h-4 rounded-full bg-blue-200 shadow-[0_0_20px_5px_rgba(59,130,246,0.8)] z-10 -ml-[7px] md:ml-0 md:-translate-x-1/2 -translate-y-1/2"
              style={{ top: lineHeight }}
            />
 
@@ -93,7 +93,7 @@ export default function MilestoneSection() {
                  <div className="hidden md:flex w-1/2 pr-16 justify-between items-start gap-6 xl:gap-8">
                     <div className="text-left flex-1 pr-6">
                        <h3 className="text-3xl lg:text-4xl font-clash font-medium text-neutral-800 leading-none group-hover:text-black transition-colors drop-shadow-none">{item.title}</h3>
-                       <p className="text-purple-700 opacity-90 mt-3 font-clash text-[1.1rem] md:text-xl tracking-wide">{item.subtitle}</p>
+                       <p className="text-blue-600 opacity-90 mt-3 font-clash text-[1.1rem] md:text-xl tracking-wide">{item.subtitle}</p>
                     </div>
                     {/* Năm mốc thời gian */}
                     <div className="text-5xl lg:text-6xl font-normal font-clash text-neutral-400 tracking-wider mt-1 shrink-0">
@@ -105,7 +105,7 @@ export default function MilestoneSection() {
                  <div className="md:hidden flex flex-col pl-12 mb-6 relative">
                     <div className="text-5xl font-normal font-clash text-neutral-400 mb-2 tracking-wider">{item.year}</div>
                     <h3 className="text-3xl font-clash font-medium text-neutral-900 leading-none drop-shadow-none pt-1">{item.title}</h3>
-                    <p className="text-purple-700 opacity-90 font-clash text-[1.1rem] mt-2">{item.subtitle}</p>
+                    <p className="text-blue-600 opacity-90 font-clash text-[1.1rem] mt-2">{item.subtitle}</p>
                  </div>
 
                  {/* Cột Phải: Nội dung mô tả (Description) */}

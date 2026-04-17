@@ -52,13 +52,13 @@ const SeamlessLighting = () => {
 
     return (
         <group ref={groupRef}>
-            {/* Tone màu Deep, Tech pha lẫn quyến rũ */}
-            <pointLight position={[ 4,  0,  0]} color="#4c1d95" intensity={80} distance={12} /> {/* Deep Violet */}
-            <pointLight position={[-4,  0,  0]} color="#00e5ff" intensity={60} distance={12} /> {/* Cyan ảo diệu */}
-            <pointLight position={[ 0,  4,  0]} color="#be185d" intensity={70} distance={12} /> {/* Dark Magenta */}
-            <pointLight position={[ 0, -4,  0]} color="#1e3a8a" intensity={80} distance={12} /> {/* Night Blue */}
-            <pointLight position={[ 0,  0,  4]} color="#9333ea" intensity={60} distance={12} /> {/* Neon Purple */}
-            <pointLight position={[ 0,  0, -4]} color="#0284c7" intensity={70} distance={12} /> {/* Dark Sky Blue */}
+            {/* Tone màu Deep Blue x Cyan hòa quyện (Hệ Thủy) */}
+            <pointLight position={[ 4,  0,  0]} color="#1d4ed8" intensity={80} distance={12} /> {/* Blue 700 */}
+            <pointLight position={[-4,  0,  0]} color="#06b6d4" intensity={60} distance={12} /> {/* Cyan 500 */}
+            <pointLight position={[ 0,  4,  0]} color="#3b82f6" intensity={70} distance={12} /> {/* Blue 500 */}
+            <pointLight position={[ 0, -4,  0]} color="#0369a1" intensity={80} distance={12} /> {/* Sky 700 */}
+            <pointLight position={[ 0,  0,  4]} color="#0ea5e9" intensity={60} distance={12} /> {/* Sky 500 */}
+            <pointLight position={[ 0,  0, -4]} color="#2dd4bf" intensity={70} distance={12} /> {/* Teal 400 */}
         </group>
     );
 };
@@ -82,7 +82,7 @@ export default memo(function FluidBlob() {
           {/* Khối Thạch Tối Giản */}
           <Blob />
           
-          <ContactShadows position={[0, -2.5, 0]} opacity={0.3} scale={15} blur={4} far={4} color="#4c1d95" />
+          <ContactShadows position={[0, -2.5, 0]} opacity={0.3} scale={15} blur={4} far={4} color="#1e3a8a" />
         </Canvas>
       </div>
     </div>

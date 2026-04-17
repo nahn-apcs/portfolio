@@ -30,7 +30,7 @@ export default function IdCard() {
       <div className="relative w-full max-w-[280px] lg:max-w-[320px] aspect-[1/1.5] mx-auto z-30 mb-10 lg:mb-0 group">
 
          {/* Vầng hào quang (Glowing Aura) khớp với màu Blob của Hero Section */}
-         <div className="absolute -inset-1 bg-gradient-to-br from-fuchsia-600/20 via-purple-600/20 to-cyan-600/20 rounded-[2rem] blur-2xl opacity-60 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
+         <div className="absolute -inset-1 bg-gradient-to-br from-sky-400/20 via-blue-500/20 to-teal-400/20 rounded-[2rem] blur-2xl opacity-60 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
 
          {/* Thân thẻ Glassmorphism */}
          <div className="relative w-full h-full rounded-[2rem] glass-card shadow-[0_20px_50px_rgba(31,38,135,0.07)] flex flex-col font-sans overflow-hidden">
@@ -48,7 +48,7 @@ export default function IdCard() {
             {/* Avatar Roblox */}
             <div className="mt-8 flex justify-center relative">
                {/* Vòng sáng quanh Avatar */}
-               <div className="absolute inset-0 bg-gradient-to-tr from-fuchsia-500 to-cyan-500 blur-lg rounded-xl w-32 h-32 md:w-36 md:h-36 mx-auto opacity-40 group-hover:opacity-70 transition-opacity duration-500" />
+               <div className="absolute inset-0 bg-gradient-to-tr from-blue-500 to-cyan-400 blur-lg rounded-xl w-32 h-32 md:w-36 md:h-36 mx-auto opacity-40 group-hover:opacity-70 transition-opacity duration-500" />
 
                <div className="relative w-32 h-32 md:w-36 md:h-36 rounded-xl overflow-hidden border border-white/20 bg-white shadow-xl z-10 transition-transform duration-500 group-hover:scale-105">
                   <img
@@ -61,7 +61,7 @@ export default function IdCard() {
 
             {/* Thông tin nhân viên */}
             <div className="px-4 mt-6 text-center">
-               <h3 className="text-xl md:text-2xl font-black tracking-widest uppercase text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-cyan-600">
+               <h3 className="text-xl md:text-2xl font-black tracking-widest uppercase text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">
                   BACKEND
                </h3>
                <h3 className="text-neutral-900 text-md font-bold tracking-[0.2em] uppercase mt-0.5 opacity-90">

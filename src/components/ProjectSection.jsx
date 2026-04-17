@@ -27,7 +27,7 @@ export default function ProjectSection() {
              viewport={{ once: true }}
              className="text-5xl md:text-[5rem] font-clash font-normal text-neutral-900 tracking-tight leading-[1.1]"
            >
-             My <span className="text-purple-600">Work</span>
+             My <span className="text-blue-600">Work</span>
            </motion.h2>
         </div>
 
@@ -54,7 +54,7 @@ export default function ProjectSection() {
           >
             {/* Vùng Ảnh (Image) */}
             <div className="relative w-full mb-10 flex items-center justify-center cursor-pointer">
-              <div className="relative w-full shadow-lg aspect-video md:aspect-[4/3] rounded-2xl overflow-hidden border border-neutral-200 group-hover:border-purple-300 group-hover:shadow-[0_0_40px_rgba(216,180,254,0.4)] transition-all duration-700">
+              <div className="relative w-full shadow-lg aspect-video md:aspect-[4/3] rounded-2xl overflow-hidden border border-neutral-200 group-hover:border-blue-300 group-hover:shadow-[0_0_40px_rgba(147,197,253,0.4)] transition-all duration-700">
                  <a href="https://www.youtube.com/watch?v=trNBoFlZsGE" target="_blank" rel="noreferrer" className="block w-full h-full">
                     <img 
                       src={`${import.meta.env.BASE_URL}snitches.png`} 
@@ -116,7 +116,7 @@ export default function ProjectSection() {
             </div>
 
             {/* Khung đứt chờ ảnh (Placeholder) */}
-            <div className="flex-1 w-full flex items-center justify-center border border-dashed border-neutral-300 rounded-2xl group-hover:border-purple-500/30 transition-colors mt-auto aspect-video md:aspect-[4/3] bg-neutral-50">
+            <div className="flex-1 w-full flex items-center justify-center border border-dashed border-neutral-300 rounded-2xl group-hover:border-blue-500/30 transition-colors mt-auto aspect-video md:aspect-[4/3] bg-neutral-50">
                <span className="text-neutral-400 font-clash tracking-widest uppercase text-sm">Cooking inside the lab...</span>
             </div>
           </motion.div>
@@ -130,7 +130,7 @@ export default function ProjectSection() {
             className="w-full md:w-1/2 lg:w-1/3 shrink-0 snap-center flex flex-col p-6 lg:p-8 lg:pt-10 group min-h-[500px] glass-card hover:bg-white/80 transition-all duration-700 relative overflow-hidden"
           >
             {/* Khung đứt chờ ảnh (Placeholder) */}
-            <div className="flex-1 w-full flex items-center justify-center border border-dashed border-neutral-300 mb-10 rounded-2xl group-hover:border-purple-500/30 transition-colors aspect-video md:aspect-[4/3] bg-neutral-50">
+            <div className="flex-1 w-full flex items-center justify-center border border-dashed border-neutral-300 mb-10 rounded-2xl group-hover:border-blue-500/30 transition-colors aspect-video md:aspect-[4/3] bg-neutral-50">
                <span className="text-neutral-400 font-clash tracking-widest uppercase text-sm">Cooking inside the lab...</span>
             </div>
 

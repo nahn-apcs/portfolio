@@ -13,7 +13,7 @@ export default function Blog() {
           transition={{ duration: 0.8 }}
           className="mb-16"
         >
-          <Link to="/" className="text-purple-600 hover:text-purple-700 font-sans text-sm tracking-widest flex items-center gap-2 mb-8 group w-fit transition-all duration-300">
+          <Link to="/" className="text-blue-600 hover:text-blue-700 font-sans text-sm tracking-widest flex items-center gap-2 mb-8 group w-fit transition-all duration-300">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="group-hover:-translate-x-1 transition-transform"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
             BACK TO HOME
           </Link>
@@ -25,7 +25,7 @@ export default function Blog() {
             <span>•</span>
             <span>May 15, 2026</span>
             <span>•</span>
-            <span className="text-purple-700 bg-purple-100 px-3 py-1 rounded-full text-xs">Algorithms</span>
+            <span className="text-blue-700 bg-blue-100 px-3 py-1 rounded-full text-xs">Algorithms</span>
           </div>
         </motion.div>
 
@@ -37,11 +37,11 @@ export default function Blog() {
           className="prose prose-neutral prose-lg md:prose-xl max-w-none 
           prose-h2:font-clash prose-h2:text-3xl prose-h2:text-neutral-900 prose-h2:mt-12 prose-h2:mb-6
           prose-p:text-neutral-700 prose-p:leading-relaxed prose-p:font-sans
-          prose-a:text-purple-600 hover:prose-a:text-purple-700 prose-a:no-underline hover:prose-a:underline
-          prose-code:text-[#7e22ce] prose-code:bg-purple-100 prose-code:px-2 prose-code:py-0.5 prose-code:rounded-md prose-code:before:content-none prose-code:after:content-none
+          prose-a:text-blue-600 hover:prose-a:text-blue-700 prose-a:no-underline hover:prose-a:underline
+          prose-code:text-[#2563eb] prose-code:bg-blue-100 prose-code:px-2 prose-code:py-0.5 prose-code:rounded-md prose-code:before:content-none prose-code:after:content-none
           prose-pre:bg-[#F8FAFC] prose-pre:border prose-pre:border-neutral-200 prose-pre:shadow-sm prose-pre:text-neutral-800
           prose-strong:text-neutral-900 prose-strong:font-semibold
-          prose-li:text-neutral-700 marker:prose-li:text-purple-600"
+          prose-li:text-neutral-700 marker:prose-li:text-blue-600"
         >
           <p>
             When tackling complex competitive programming challenges on Codeforces or LeetCode, identifying graph cycles efficiently is paramount. Standard DFS implementations are elegant but can sometimes suffer when dealing with densely connected cyclic components, causing TLE (Time Limit Exceeded) errors.

@@ -30,7 +30,7 @@ export default function ContactSection() {
           >
              <div>
                <h4 className="text-sm font-sans text-neutral-500 mb-1">Email</h4>
-               <a href="mailto:kenpro030709@gmail.com" className="text-neutral-700 hover:text-purple-600 font-sans text-[15px] transition-colors inline-block">kenpro030709@gmail.com</a>
+               <a href="mailto:kenpro030709@gmail.com" className="text-neutral-700 hover:text-blue-600 font-sans text-[15px] transition-colors inline-block">kenpro030709@gmail.com</a>
              </div>
              <div>
                <h4 className="text-sm font-sans text-neutral-500 mb-1">Location</h4>

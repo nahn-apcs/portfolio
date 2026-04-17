@@ -57,9 +57,9 @@ body {
   @apply text-neutral-900 font-sans overflow-x-hidden;
   background-color: #ffffff;
   background-image: 
-    radial-gradient(at 10% 0%, rgb(243 232 255 / 0.8) 0px, transparent 50%),
-    radial-gradient(at 90% 10%, rgb(224 231 255 / 0.8) 0px, transparent 50%),
-    radial-gradient(at 50% 100%, rgb(250 245 255 / 0.8) 0px, transparent 50%);
+    radial-gradient(at 10% 0%, rgb(224 242 254 / 0.8) 0px, transparent 50%),
+    radial-gradient(at 90% 10%, rgb(219 234 254 / 0.8) 0px, transparent 50%),
+    radial-gradient(at 50% 100%, rgb(236 253 255 / 0.8) 0px, transparent 50%);
   background-attachment: fixed;
 }
 

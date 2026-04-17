@@ -38,7 +38,7 @@ export default memo(function ParticleNetwork() {
             distance: 180, // Bán kính (threshold) để các Node kết nối với chuột
             links: {
               opacity: 0.8,
-              color: "#ec4899", // Trả lại màu Hồng Neon huyền thoại
+              color: "#38bdf8", // Xanh sáng (Sky)
             },
           },
           push: {
@@ -48,10 +48,10 @@ export default memo(function ParticleNetwork() {
       },
       particles: {
         color: {
-          value: "#7e22ce",
+          value: "#2563eb", /* Blue-600 */
         },
         links: {
-          color: "#9333ea",
+          color: "#3b82f6", /* Blue-500 */
           distance: 150,
           enable: true,
           opacity: 0.3,

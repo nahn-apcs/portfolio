@@ -19,9 +19,9 @@ export default function SocialSidebar() {
       transition={{ delay: 0.5, duration: 0.8 }}
       className="fixed left-6 md:left-10 bottom-24 md:bottom-32 top-0 flex-col justify-center z-40 hidden md:flex"
     >
-      <div className="flex flex-col items-center gap-8 py-8 px-3 rounded-full transition-all duration-500 hover:bg-[#e4ccff] hover:shadow-[0_0_50px_rgba(168,124,255,0.4)] group">
+      <div className="flex flex-col items-center gap-8 py-8 px-3 rounded-full transition-all duration-500 hover:bg-blue-100 hover:shadow-[0_0_50px_rgba(59,130,246,0.3)] group">
         {socials.map((item, idx) => (
-          <a key={idx} href={item.href} target="_blank" rel="noreferrer" className="text-[#a1a1aa] group-hover:text-[#18181b] hover:!text-[#6b21a8] hover:scale-125 transition-all duration-300 transform drop-shadow-sm">
+          <a key={idx} href={item.href} target="_blank" rel="noreferrer" className="text-[#a1a1aa] group-hover:text-[#18181b] hover:!text-blue-600 hover:scale-125 transition-all duration-300 transform drop-shadow-sm">
             {item.icon}
           </a>
         ))}
