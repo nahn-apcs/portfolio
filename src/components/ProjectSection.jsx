@@ -64,8 +64,8 @@ export default function ProjectSection() {
                  </a>
               </div>
               
-              <a href="https://www.youtube.com/watch?v=trNBoFlZsGE" target="_blank" rel="noreferrer" className="absolute -bottom-4 -right-4 lg:-bottom-6 lg:-right-6 z-10 shadow-lg">
-                <div className="w-12 h-12 rounded-full border border-neutral-300 flex items-center justify-center text-neutral-400 group-hover:bg-gradient-to-r group-hover:from-indigo-600 group-hover:to-cyan-500 group-hover:border-transparent group-hover:text-white transition-all duration-300">
+              <a href="https://www.youtube.com/watch?v=trNBoFlZsGE" target="_blank" rel="noreferrer" className="absolute -bottom-4 -right-4 lg:-bottom-6 lg:-right-6 z-10">
+                <div className="w-12 h-12 bg-white rounded-full border border-neutral-300 flex items-center justify-center text-neutral-400 shadow-lg group-hover:bg-gradient-to-r group-hover:from-indigo-600 group-hover:to-cyan-500 group-hover:border-transparent group-hover:text-white transition-all duration-300">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
                 </div>
               </a>
