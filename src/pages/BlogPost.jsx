@@ -81,19 +81,32 @@ export default function BlogPost() {
           <ReactMarkdown
             remarkPlugins={[remarkGfm]}
             components={{
+              pre({ children }) {
+                return <div className="my-10 rounded-xl overflow-hidden shadow-sm border border-neutral-200/80 bg-white/50 backdrop-blur-md relative group">{children}</div>;
+              },
               code({node, inline, className, children, ...props}) {
                 const match = /language-(\w+)/.exec(className || '')
                 return !inline && match ? (
-                  <div className="rounded-xl overflow-hidden shadow-sm border border-neutral-200/60 my-8">
-                     <SyntaxHighlighter
-                        {...props}
-                        children={String(children).replace(/\n$/, '')}
-                        style={materialLight}
-                        language={match[1]}
-                        PreTag="div"
-                        customStyle={{ margin: 0, padding: '1.5rem', background: '#FAFAFA', fontSize: '0.95rem' }}
-                      />
-                  </div>
+                  <>
+                    <div className="bg-[#F8FAFC] px-4 py-3 flex items-center gap-2 border-b border-neutral-200/80 relative">
+                      <div className="flex gap-1.5 z-10">
+                        <div className="w-2.5 h-2.5 rounded-full bg-[#ff5f56]"></div>
+                        <div className="w-2.5 h-2.5 rounded-full bg-[#ffbd2e]"></div>
+                        <div className="w-2.5 h-2.5 rounded-full bg-[#27c93f]"></div>
+                      </div>
+                      <div className="absolute inset-x-0 text-center text-neutral-400 text-[10px] font-mono font-semibold tracking-widest uppercase">
+                        {match[1]}
+                      </div>
+                    </div>
+                    <SyntaxHighlighter
+                      {...props}
+                      children={String(children).replace(/\n$/, '')}
+                      style={materialLight}
+                      language={match[1]}
+                      PreTag="div"
+                      customStyle={{ margin: 0, padding: '1.5rem', background: 'transparent', fontSize: '0.9rem', lineHeight: '1.7' }}
+                    />
+                  </>
                 ) : (
                   <code {...props} className="text-indigo-600 bg-indigo-50 px-1.5 py-0.5 rounded-md font-medium text-[0.9em]">
                     {children}
