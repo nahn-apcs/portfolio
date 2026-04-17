@@ -4,7 +4,7 @@ import IdCard from './IdCard';
 
 const commands = [
   { type: 'cmd', text: 'whoami', speed: 60, delayAfter: 200 },
-  { type: 'out', text: 'Thành Nhân (NAHN) - Backend Developer', speed: 10, delayAfter: 400 },
+  { type: 'out', text: 'Nguyễn Thành Nhân - Backend Developer', speed: 10, delayAfter: 400 },
   { type: 'cmd', text: 'cat "about me.md"', speed: 50, delayAfter: 200 },
   { type: 'out', text: "APCS Student @ HCMUS | System Architecture & Performance Optimization.\n> I bridge the gap between algorithms and system internals by engineering an Online Judge from scratch. My focus is on building scalable, high-performance tools that solve complex technical challenges.", speed: 5, delayAfter: 500 }
 ];

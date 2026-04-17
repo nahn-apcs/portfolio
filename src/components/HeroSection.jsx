@@ -101,8 +101,8 @@ export default function HeroSection() {
           <p className="font-clash font-normal text-indigo-400 text-xl md:text-2xl lg:text-3xl tracking-wide mb-0 lg:mb-1 opacity-90 magnetic pointer-events-auto">
             Hello! I'm
           </p>
-          <h1 className="text-[2.5rem] md:text-[3.5rem] lg:text-[4.2rem] font-clash font-semibold text-slate-900 leading-none tracking-wider uppercase magnetic pointer-events-auto">
-            NAHN
+          <h1 className="text-[2rem] md:text-[2.8rem] lg:text-[3.3rem] font-clash font-semibold text-slate-900 leading-none tracking-wider uppercase magnetic pointer-events-auto">
+            Nhan Nguyen
           </h1>
         </motion.div>
 
