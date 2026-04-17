@@ -38,7 +38,7 @@ export default memo(function ParticleNetwork() {
             distance: 180,
             links: {
               opacity: 0.8,
-              color: "#6366f1", /* Indigo 500 */
+              color: "#94a3b8", /* Slate 400 */
             },
           },
           push: {
@@ -48,13 +48,13 @@ export default memo(function ParticleNetwork() {
       },
       particles: {
         color: {
-          value: ["#6366f1", "#0ea5e9", "#14b8a6"], /* Indigo, Sky Blue, Teal */
+          value: ["#cbd5e1", "#e2e8f0"], /* Slate 300, Slate 200 */
         },
         links: {
-          color: "#818cf8", /* Indigo 400 */
+          color: "#e2e8f0", /* Slate 200 */
           distance: 150,
           enable: true,
-          opacity: 0.4,
+          opacity: 0.6,
           width: 1,
         },
         move: {

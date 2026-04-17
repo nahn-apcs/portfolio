@@ -30,10 +30,10 @@ const StaggeredAnimatedWord = ({ word, isBackground }) => {
               exit: { y: "-120%", transition: { duration: 0.9, ease: [0.16, 1, 0.3, 1] } }
             }}
             className={`select-none font-clash font-black uppercase tracking-wider leading-none block pb-1 ${isBackground
-              ? "text-[1.8rem] md:text-[2.4rem] lg:text-[2.8rem] bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-cyan-500"
-              : "text-[1.8rem] md:text-[2.4rem] lg:text-[2.8rem] text-neutral-900"
+              ? "text-[1.8rem] md:text-[2.4rem] lg:text-[2.8rem] font-outline-bg"
+              : "text-[1.8rem] md:text-[2.4rem] lg:text-[2.8rem] bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-cyan-500"
               }`}
-            style={isBackground ? { WebkitTextStroke: "1px rgba(79, 70, 229, 0.2)" } : {}}
+            style={isBackground ? { WebkitTextStroke: "1.5px rgba(150, 150, 150, 0.4)", color: "transparent" } : { WebkitTextStroke: "1px rgba(79, 70, 229, 0.2)" }}
           >
             {char === ' ' ? '\u00A0' : char}
           </motion.span>
