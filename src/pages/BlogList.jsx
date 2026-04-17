@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { getAllPosts } from '../utils/markdownParser';
 import ParticleNetwork from '../components/ParticleNetwork';
-import Footer from '../components/Footer';
 
 export default function BlogList() {
   const posts = getAllPosts();
@@ -66,7 +65,6 @@ export default function BlogList() {
           ))}
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

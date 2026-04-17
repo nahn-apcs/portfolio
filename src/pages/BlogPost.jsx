@@ -7,7 +7,6 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { materialLight } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import { getPostBySlug } from '../utils/markdownParser';
 import ParticleNetwork from '../components/ParticleNetwork';
-import Footer from '../components/Footer';
 
 export default function BlogPost() {
   const { slug } = useParams();
@@ -107,7 +106,6 @@ export default function BlogPost() {
           </ReactMarkdown>
         </motion.article>
       </div>
-      <Footer />
     </div>
   );
 }
