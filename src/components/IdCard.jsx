@@ -30,7 +30,7 @@ export default function IdCard() {
       <div className="relative w-full max-w-[280px] lg:max-w-[320px] aspect-[1/1.5] mx-auto z-30 mb-10 lg:mb-0 group">
 
          {/* Vầng hào quang (Glowing Aura) khớp với màu Blob của Hero Section */}
-         <div className="absolute -inset-1 bg-gradient-to-br from-rose-400/30 via-purple-400/30 to-teal-400/30 rounded-[2rem] blur-2xl opacity-60 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
+         <div className="absolute -inset-1 bg-gradient-to-br from-indigo-400/30 via-purple-400/30 to-cyan-400/30 rounded-[2rem] blur-2xl opacity-60 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
 
          {/* Thân thẻ Glassmorphism */}
          <div className="relative w-full h-full rounded-[2rem] glass-card shadow-[0_20px_50px_rgba(31,38,135,0.07)] flex flex-col font-sans overflow-hidden">
@@ -61,7 +61,7 @@ export default function IdCard() {
 
             {/* Thông tin nhân viên */}
             <div className="px-4 mt-6 text-center">
-               <h3 className="text-xl md:text-2xl font-black tracking-widest uppercase text-transparent bg-clip-text bg-gradient-to-r from-rose-500 via-orange-500 to-amber-500">
+               <h3 className="text-xl md:text-2xl font-black tracking-widest uppercase text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-cyan-500">
                   BACKEND
                </h3>
                <h3 className="text-neutral-900 text-md font-bold tracking-[0.2em] uppercase mt-0.5 opacity-90">

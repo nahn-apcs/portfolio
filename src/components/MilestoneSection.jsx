@@ -54,7 +54,7 @@ export default function MilestoneSection() {
              className="text-5xl md:text-[5rem] font-clash font-medium text-neutral-900 tracking-tight leading-[1.1]"
            >
              Honors &<br/>
-             <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 via-orange-500 to-rose-500">
+             <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-cyan-500">
                milestones
              </span>
            </motion.h2>
@@ -64,17 +64,17 @@ export default function MilestoneSection() {
         <div ref={containerRef} className="relative w-full max-w-5xl mx-auto">
            
            {/* Dải nền tối tĩnh */}
-           <div className="absolute left-4 md:left-1/2 top-0 bottom-0 md:-translate-x-1/2 w-[2px] bg-rose-100" />
+           <div className="absolute left-4 md:left-1/2 top-0 bottom-0 md:-translate-x-1/2 w-[2px] bg-indigo-100" />
 
            {/* Dải sáng trung tâm dọc MỞ RỘNG dần độ cao theo lineHeight */}
            <motion.div 
-             className="absolute left-4 md:left-1/2 top-0 md:-translate-x-1/2 w-[2px] bg-gradient-to-b from-transparent via-amber-400 to-rose-500 shadow-[0_0_15px_1px_rgba(244,63,94,0.5)]"
+             className="absolute left-4 md:left-1/2 top-0 md:-translate-x-1/2 w-[2px] bg-gradient-to-b from-transparent via-indigo-500 to-cyan-400 shadow-[0_0_15px_1px_rgba(99,102,241,0.5)]"
              style={{ height: lineHeight }}
            />
            
            {/* Hạt nhân sáng đuổi theo đáy cột sáng (Glowing Dot) */}
            <motion.div 
-             className="absolute left-4 md:left-1/2 w-4 h-4 rounded-full bg-gradient-to-r from-orange-400 to-rose-400 shadow-[0_0_20px_5px_rgba(244,63,94,0.8)] z-10 -ml-[7px] md:ml-0 md:-translate-x-1/2 -translate-y-1/2"
+             className="absolute left-4 md:left-1/2 w-4 h-4 rounded-full bg-gradient-to-r from-indigo-400 to-cyan-400 shadow-[0_0_20px_5px_rgba(99,102,241,0.8)] z-10 -ml-[7px] md:ml-0 md:-translate-x-1/2 -translate-y-1/2"
              style={{ top: lineHeight }}
            />
 
@@ -93,7 +93,7 @@ export default function MilestoneSection() {
                  <div className="hidden md:flex w-1/2 pr-16 justify-between items-start gap-6 xl:gap-8">
                     <div className="text-left flex-1 pr-6">
                        <h3 className="text-3xl lg:text-4xl font-clash font-medium text-neutral-800 leading-none group-hover:text-black transition-colors drop-shadow-none">{item.title}</h3>
-                       <p className="text-amber-600 opacity-90 mt-3 font-clash text-[1.1rem] md:text-xl tracking-wide">{item.subtitle}</p>
+                       <p className="text-indigo-600 opacity-90 mt-3 font-clash text-[1.1rem] md:text-xl tracking-wide">{item.subtitle}</p>
                     </div>
                     {/* Năm mốc thời gian */}
                     <div className="text-5xl lg:text-6xl font-normal font-clash text-neutral-400 tracking-wider mt-1 shrink-0">
@@ -105,7 +105,7 @@ export default function MilestoneSection() {
                  <div className="md:hidden flex flex-col pl-12 mb-6 relative">
                     <div className="text-5xl font-normal font-clash text-neutral-400 mb-2 tracking-wider">{item.year}</div>
                     <h3 className="text-3xl font-clash font-medium text-neutral-900 leading-none drop-shadow-none pt-1">{item.title}</h3>
-                    <p className="text-amber-600 opacity-90 font-clash text-[1.1rem] mt-2">{item.subtitle}</p>
+                    <p className="text-indigo-600 opacity-90 font-clash text-[1.1rem] mt-2">{item.subtitle}</p>
                  </div>
 
                  {/* Cột Phải: Nội dung mô tả (Description) */}

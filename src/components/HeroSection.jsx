@@ -30,10 +30,10 @@ const StaggeredAnimatedWord = ({ word, isBackground }) => {
               exit: { y: "-120%", transition: { duration: 0.9, ease: [0.16, 1, 0.3, 1] } }
             }}
             className={`select-none font-clash font-black uppercase tracking-wider leading-none block pb-1 ${isBackground
-              ? "text-[1.8rem] md:text-[2.4rem] lg:text-[2.8rem] bg-clip-text text-transparent bg-gradient-to-r from-rose-500 via-fuchsia-500 to-indigo-500"
+              ? "text-[1.8rem] md:text-[2.4rem] lg:text-[2.8rem] bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-cyan-500"
               : "text-[1.8rem] md:text-[2.4rem] lg:text-[2.8rem] text-neutral-900"
               }`}
-            style={isBackground ? { WebkitTextStroke: "1px rgba(244, 63, 94, 0.2)" } : {}}
+            style={isBackground ? { WebkitTextStroke: "1px rgba(79, 70, 229, 0.2)" } : {}}
           >
             {char === ' ' ? '\u00A0' : char}
           </motion.span>
@@ -55,7 +55,7 @@ const HeroTypography = () => {
 
   return (
     <div className="text-left relative inline-block w-max md:-mt-10 lg:-mt-20 mr-0 md:mr-4 lg:mr-8 ml-auto">
-      <p className="relative z-20 text-rose-500 font-clash font-normal text-xl md:text-2xl lg:text-3xl tracking-wide mb-0 lg:mb-1 opacity-90 drop-shadow-[0_1px_1px_rgba(0,0,0,0.1)] text-left">
+      <p className="relative z-20 text-indigo-600 font-clash font-normal text-xl md:text-2xl lg:text-3xl tracking-wide mb-0 lg:mb-1 opacity-90 drop-shadow-[0_1px_1px_rgba(0,0,0,0.1)] text-left">
         A Creative
       </p>
 
@@ -89,7 +89,7 @@ export default function HeroSection() {
       {/* Siêu phẩm: Khối Thạch Pha Lê Đa Sắc (Multicolored Blob) */}
       <FluidBlob />
 
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-br from-rose-500/10 via-amber-500/10 to-teal-500/10 rounded-full blur-[120px] -z-10 pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-br from-indigo-500/10 to-cyan-500/10 rounded-full blur-[120px] -z-10 pointer-events-none" />
 
       <div className="container mx-auto px-6 relative flex flex-col md:flex-row justify-between items-center md:items-start z-10 w-full pointer-events-none">
 
@@ -100,7 +100,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="w-full md:w-5/12 text-left mb-16 md:mb-0 md:pl-16 lg:pl-32 magnetic md:-mt-10 lg:-mt-20"
         >
-          <p className="text-rose-500 font-clash font-normal text-xl md:text-2xl lg:text-3xl tracking-wide mb-0 lg:mb-1 opacity-90 magnetic pointer-events-auto drop-shadow-none">
+          <p className="text-indigo-600 font-clash font-normal text-xl md:text-2xl lg:text-3xl tracking-wide mb-0 lg:mb-1 opacity-90 magnetic pointer-events-auto drop-shadow-none">
             Hello! I'm
           </p>
           <h1 className="text-[2.5rem] md:text-[3.5rem] lg:text-[4.2rem] font-clash font-black text-neutral-900 leading-none tracking-wider uppercase magnetic pointer-events-auto">

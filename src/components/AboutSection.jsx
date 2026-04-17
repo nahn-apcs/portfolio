@@ -61,7 +61,7 @@ export default function AboutSection() {
              viewport={{ once: true }}
              className="text-5xl md:text-[5rem] font-clash font-medium text-neutral-900 tracking-tight leading-[1.1] select-none"
            >
-             About <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-rose-500">
+             About <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-cyan-500">
                me
              </span>
            </motion.h2>
@@ -110,9 +110,9 @@ export default function AboutSection() {
                   const textToRender = isCurrent ? cmd.text.slice(0, charIdx) : cmd.text;
                   
                   return (
-                    <div key={idx} className={`mb-5 ${cmd.type === 'cmd' ? 'text-amber-500' : 'text-neutral-600'} whitespace-pre-wrap`}>
+                    <div key={idx} className={`mb-5 ${cmd.type === 'cmd' ? 'text-indigo-600' : 'text-neutral-600'} whitespace-pre-wrap`}>
                       {cmd.type === 'cmd' ? (
-                        <span className="text-rose-500 font-bold mr-3 tracking-widest">nahn_admin@~ %</span>
+                        <span className="text-[#0ea5e9] font-bold mr-3 tracking-widest">nahn_admin@~ %</span>
                       ) : (
                         <span className="text-neutral-400 mr-2 opacity-80">❯</span>
                       )}
@@ -130,8 +130,8 @@ export default function AboutSection() {
                 
                 {/* Blinking Cursor after complete */}
                 {!isTyping && lineIdx >= commands.length && (
-                   <div className="mt-4 text-amber-500">
-                      <span className="text-rose-500 font-bold mr-3 tracking-widest">nahn_admin@~ %</span>
+                   <div className="mt-4 text-indigo-600">
+                      <span className="text-[#0ea5e9] font-bold mr-3 tracking-widest">nahn_admin@~ %</span>
                       <motion.span 
                           animate={{ opacity: [1, 0] }}
                           transition={{ repeat: Infinity, duration: 0.8, ease: "linear" }}

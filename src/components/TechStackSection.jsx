@@ -54,7 +54,7 @@ export default function TechStackSection() {
         >
           {/* Tiêu đề ăn theo style của "About me" */}
           <h2 className="text-5xl md:text-[5rem] font-clash font-medium text-neutral-900 tracking-tight leading-[1.1] select-none text-center">
-            Tech stack <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-cyan-500 to-blue-500">I use</span>
+            Tech stack <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-cyan-500">I use</span>
           </h2>
 
           {/* Dải Marquee Typography quay vòng vô cực chứa Icon và Tên công cụ */}

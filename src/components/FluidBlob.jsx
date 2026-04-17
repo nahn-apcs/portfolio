@@ -52,13 +52,13 @@ const SeamlessLighting = () => {
 
     return (
         <group ref={groupRef}>
-            {/* Tone màu Đa Sắc Rực Rỡ Holographic - Cực kì nổi bật trên nền Trắng */}
-            <pointLight position={[ 4,  0,  0]} color="#ff007a" intensity={90} distance={12} /> {/* Vivid Pink */}
-            <pointLight position={[-4,  0,  0]} color="#00e5ff" intensity={80} distance={12} /> {/* Cyan ảo */}
-            <pointLight position={[ 0,  4,  0]} color="#f59e0b" intensity={90} distance={12} /> {/* Sunset Orange */}
-            <pointLight position={[ 0, -4,  0]} color="#3b82f6" intensity={80} distance={12} /> {/* Royal Blue */}
-            <pointLight position={[ 0,  0,  4]} color="#8b5cf6" intensity={90} distance={12} /> {/* Neon Violet */}
-            <pointLight position={[ 0,  0, -4]} color="#10b981" intensity={80} distance={12} /> {/* Emerald Green */}
+            {/* Tone màu Deep, Tech pha lẫn Sang trọng */ }
+            <pointLight position={[ 4,  0,  0]} color="#4c1d95" intensity={80} distance={12} /> {/* Deep Violet */}
+            <pointLight position={[-4,  0,  0]} color="#00e5ff" intensity={60} distance={12} /> {/* Cyan ảo diệu */}
+            <pointLight position={[ 0,  4,  0]} color="#be185d" intensity={70} distance={12} /> {/* Dark Magenta */}
+            <pointLight position={[ 0, -4,  0]} color="#1e3a8a" intensity={80} distance={12} /> {/* Night Blue */}
+            <pointLight position={[ 0,  0,  4]} color="#9333ea" intensity={60} distance={12} /> {/* Neon Purple */}
+            <pointLight position={[ 0,  0, -4]} color="#0284c7" intensity={70} distance={12} /> {/* Dark Sky Blue */}
         </group>
     );
 };
@@ -73,8 +73,8 @@ export default memo(function FluidBlob() {
           eventSource={typeof window !== 'undefined' ? document.body : undefined}
           eventPrefix="client"
         >
-          {/* Giảm ánh sáng môi trường xuống 0.6 để Khối cầu tự phát sáng Holographic hiển thị sắc độ đậm và nét, không bị nền trắng "luộc chín" (wash out) */}
-          <ambientLight intensity={0.6} color="#ffffff" />
+          {/* Ánh sáng môi trường cấp đủ sáng nền cho Light Theme nhưng vẫn giữ khối nét */}
+          <ambientLight intensity={1.1} color="#ffffff" />
           
           {/* Hệ thống nhuộm màu Ánh sáng vật lý vô tận */}
           <SeamlessLighting />

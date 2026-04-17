@@ -57,10 +57,10 @@ body {
   @apply text-neutral-900 font-sans overflow-x-hidden;
   background-color: #fafafa;
   background-image: 
-    radial-gradient(at 0% 0%, rgba(254, 226, 226, 0.6) 0px, transparent 50%), /* Rose/Pink 100 */
-    radial-gradient(at 100% 0%, rgba(254, 243, 199, 0.6) 0px, transparent 50%), /* Amber 100 */
-    radial-gradient(at 100% 100%, rgba(204, 251, 241, 0.6) 0px, transparent 50%), /* Teal 100 */
-    radial-gradient(at 0% 100%, rgba(237, 233, 254, 0.6) 0px, transparent 50%); /* Violet 100 */
+    radial-gradient(at 0% 0%, rgb(238 242 255 / 0.8) 0px, transparent 50%), /* Indigo 50 */
+    radial-gradient(at 100% 0%, rgb(240 253 250 / 0.6) 0px, transparent 50%), /* Teal 50 */
+    radial-gradient(at 100% 100%, rgb(248 250 252 / 0.8) 0px, transparent 50%), /* Slate 50 */
+    radial-gradient(at 0% 100%, rgb(239 246 255 / 0.8) 0px, transparent 50%); /* Blue 50 */
   background-attachment: fixed;
 }
 
