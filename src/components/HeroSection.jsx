@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import ParticleNetwork from './ParticleNetwork';
 import FluidBlob from './FluidBlob';
 
 // Tuyệt chiêu cuối: Component Tách Chữ mà KHÔNG LÀM HỎNG KERNING của Font
@@ -83,11 +84,10 @@ const HeroTypography = () => {
 export default function HeroSection() {
   return (
     <section id="home" className="min-h-screen relative flex items-center justify-center pt-20">
+      <ParticleNetwork />
 
       {/* Siêu phẩm: Khối Thạch Pha Lê Đa Sắc (Multicolored Blob) */}
       <FluidBlob />
-
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-br from-indigo-500/10 to-cyan-500/10 rounded-full blur-[120px] -z-10 pointer-events-none" />
 
       <div className="container mx-auto px-6 relative flex flex-col md:flex-row justify-between items-center md:items-start z-10 w-full pointer-events-none">
 
