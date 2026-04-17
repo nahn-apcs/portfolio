@@ -76,7 +76,8 @@ export default function BlogPost() {
           prose-p:text-slate-700 prose-p:leading-relaxed prose-p:font-sans
           prose-a:text-indigo-600 hover:prose-a:text-indigo-700 prose-a:no-underline hover:prose-a:underline
           prose-strong:text-slate-900 prose-strong:font-semibold
-          prose-li:text-slate-700 marker:prose-li:text-indigo-500"
+          prose-li:text-slate-700 marker:prose-li:text-indigo-500
+          prose-code:before:content-none prose-code:after:content-none"
         >
           <ReactMarkdown
             remarkPlugins={[remarkGfm]}
