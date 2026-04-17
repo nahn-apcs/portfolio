@@ -3,6 +3,9 @@ import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
+import 'katex/dist/katex.min.css';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { materialLight } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import { getPostBySlug } from '../utils/markdownParser';
@@ -55,13 +58,15 @@ export default function BlogPost() {
               </>
             )}
             <span>{post.metadata.date}</span>
-            {post.metadata.tags && (
-              <>
+            {post.metadata.tags && post.metadata.tags.length > 0 && (
+              <div className="flex gap-2 items-center">
                 <span>•</span>
-                <span className="text-indigo-700 bg-indigo-50 px-3 py-1 rounded-full text-xs">
-                  {post.metadata.tags}
-                </span>
-              </>
+                {post.metadata.tags.map(tag => (
+                  <span key={tag} className="text-indigo-700 bg-indigo-50 px-3 py-1 rounded-full text-xs">
+                    {tag}
+                  </span>
+                ))}
+              </div>
             )}
           </div>
         </motion.div>
@@ -72,7 +77,9 @@ export default function BlogPost() {
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.2 }}
           className="prose prose-neutral prose-lg md:prose-xl max-w-none pb-20
-          prose-h2:font-clash prose-h2:text-3xl prose-h2:text-slate-900 prose-h2:mt-12 prose-h2:mb-6
+          prose-h1:font-clash prose-h1:text-4xl prose-h1:text-transparent prose-h1:bg-clip-text prose-h1:bg-gradient-to-r prose-h1:from-indigo-600 prose-h1:to-cyan-600 prose-h1:mt-16 prose-h1:mb-8
+          prose-h2:font-clash prose-h2:text-3xl prose-h2:text-transparent prose-h2:bg-clip-text prose-h2:bg-gradient-to-r prose-h2:from-purple-600 prose-h2:to-indigo-500 prose-h2:mt-12 prose-h2:mb-6
+          prose-h3:font-clash prose-h3:text-2xl prose-h3:text-slate-800 prose-h3:mt-8 prose-h3:mb-4
           prose-p:text-slate-700 prose-p:leading-relaxed prose-p:font-sans
           prose-a:text-indigo-600 hover:prose-a:text-indigo-700 prose-a:no-underline hover:prose-a:underline
           prose-strong:text-slate-900 prose-strong:font-semibold
@@ -80,7 +87,8 @@ export default function BlogPost() {
           prose-code:before:content-none prose-code:after:content-none"
         >
           <ReactMarkdown
-            remarkPlugins={[remarkGfm]}
+            remarkPlugins={[remarkGfm, remarkMath]}
+            rehypePlugins={[rehypeKatex]}
             components={{
               pre({ children }) {
                 return <div className="my-10 rounded-xl overflow-hidden shadow-sm border border-neutral-200/80 bg-white/50 backdrop-blur-md relative group">{children}</div>;

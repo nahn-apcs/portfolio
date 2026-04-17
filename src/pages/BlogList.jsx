@@ -41,13 +41,15 @@ export default function BlogList() {
               <Link to={`/blog/${post.slug}`} className="block">
                 <div className="flex items-center gap-4 text-slate-500 font-sans text-sm tracking-wide mb-4">
                   <span>{post.metadata.date}</span>
-                  {post.metadata.tags && (
-                    <>
+                  {post.metadata.tags && post.metadata.tags.length > 0 && (
+                    <div className="flex gap-2 items-center">
                       <span>•</span>
-                      <span className="text-indigo-600 bg-indigo-50 px-3 py-1 rounded-full text-xs">
-                        {post.metadata.tags}
-                      </span>
-                    </>
+                      {post.metadata.tags.map(tag => (
+                        <span key={tag} className="text-indigo-600 bg-indigo-50 px-3 py-1 rounded-full text-xs">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
                   )}
                 </div>
                 <h2 className="text-2xl font-clash font-semibold text-slate-900 mb-3 group-hover:text-indigo-600 transition-colors">
