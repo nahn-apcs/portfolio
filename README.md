@@ -29,7 +29,7 @@ Hệ thống Blog được tự động hóa hoàn toàn. Bạn **không cần v
 ---
 title: "Nhập Tên Bài Viết Của Bạn Vào Đây"
 date: "2026-06-01"
-author: "Thành Nhân"
+author: "Thanh Nhan"
 tags: "Competitive Programming"
 summary: "Nói ngắn gọn về nội dung bài viết để nó hiện ở ngoài danh sách..."
 ---
