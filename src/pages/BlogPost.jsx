@@ -6,8 +6,8 @@ import remarkGfm from 'remark-gfm';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 import 'katex/dist/katex.min.css';
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { coldarkCold } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { vs } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import { getPostBySlug } from '../utils/markdownParser';
 import ParticleNetwork from '../components/ParticleNetwork';
 
@@ -94,29 +94,29 @@ export default function BlogPost() {
                 return <a {...props} target="_blank" rel="noopener noreferrer" />;
               },
               pre({ children }) {
-                return <div className="my-10 rounded-2xl overflow-hidden shadow-sm border border-slate-200 bg-[#E2E8F0]/30 relative group">{children}</div>;
+                return <div className="my-10 rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-neutral-200 bg-white relative group z-10">{children}</div>;
               },
               code({node, inline, className, children, ...props}) {
                 const match = /language-(\w+)/.exec(className || '')
                 return !inline && match ? (
                   <>
-                    <div className="bg-[#CBD5E1]/40 px-4 py-3 flex items-center gap-2 border-b border-slate-200/60 relative">
-                      <div className="flex gap-1.5 z-10">
-                        <div className="w-2.5 h-2.5 rounded-full bg-[#ff5f56] border border-red-500/20"></div>
-                        <div className="w-2.5 h-2.5 rounded-full bg-[#ffbd2e] border border-yellow-500/20"></div>
-                        <div className="w-2.5 h-2.5 rounded-full bg-[#27c93f] border border-green-500/20"></div>
+                    <div className="bg-[#F3F4F6] px-4 py-3 flex items-center gap-2 border-b border-neutral-200 relative z-10">
+                      <div className="flex gap-2 z-10">
+                        <div className="w-3 h-3 rounded-full bg-[#ff5f56] border border-[#e0443e]"></div>
+                        <div className="w-3 h-3 rounded-full bg-[#ffbd2e] border border-[#dea123]"></div>
+                        <div className="w-3 h-3 rounded-full bg-[#27c93f] border border-[#1aab29]"></div>
                       </div>
-                      <div className="absolute inset-x-0 text-center text-slate-500 text-[10px] font-mono font-semibold tracking-widest uppercase">
+                      <div className="absolute inset-x-0 text-center text-slate-500 text-[11px] font-mono font-semibold tracking-widest uppercase">
                         {match[1]}
                       </div>
                     </div>
                     <SyntaxHighlighter
                       {...props}
                       children={String(children).replace(/\n$/, '')}
-                      style={coldarkCold}
+                      style={vs}
                       language={match[1]}
                       PreTag="div"
-                      customStyle={{ margin: 0, padding: '1.5rem', background: 'transparent', fontSize: '0.9rem', lineHeight: '1.7', fontFamily: "'JetBrains Mono', monospace" }}
+                      customStyle={{ margin: 0, padding: '1.5rem', background: '#FFFFFF', fontSize: '0.9rem', lineHeight: '1.7', fontFamily: "'JetBrains Mono', monospace" }}
                     />
                   </>
                 ) : (
