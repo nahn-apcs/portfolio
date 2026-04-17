@@ -37,8 +37,8 @@ export default memo(function ParticleNetwork() {
           grab: {
             distance: 180,
             links: {
-              opacity: 0.8,
-              color: "#94a3b8", /* Slate 400 */
+              opacity: 0.6,
+              color: "#4f46e5", /* Đậm đà Indigo 600 khi hover chuột */
             },
           },
           push: {
@@ -48,13 +48,14 @@ export default memo(function ParticleNetwork() {
       },
       particles: {
         color: {
-          value: ["#cbd5e1", "#e2e8f0"], /* Slate 300, Slate 200 */
+          /* Dải màu Cực Tinh Tế: Tím Chàm, Lơ, Tím Violet, Xanh Biển trong vắt */
+          value: ["#4f46e5", "#06b6d4", "#8b5cf6", "#3b82f6"], 
         },
         links: {
-          color: "#e2e8f0", /* Slate 200 */
+          color: "#818cf8", /* Indigo 400 nhạt làm nền */
           distance: 150,
           enable: true,
-          opacity: 0.6,
+          opacity: 0.3,
           width: 1,
         },
         move: {
