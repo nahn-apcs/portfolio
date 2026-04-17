@@ -19,14 +19,12 @@ export default function BlogList() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="mb-16"
+          className="mb-16 mt-8"
         >
-          <Link to="/" className="text-indigo-500 hover:text-indigo-600 font-sans text-sm tracking-widest flex items-center gap-2 mb-8 group w-fit transition-all duration-300">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="group-hover:-translate-x-1 transition-transform"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
-            BACK TO PORTFOLIO
-          </Link>
-          <h1 className="text-4xl md:text-6xl font-clash font-semibold text-slate-900 tracking-tight leading-tight mb-4">
-            Notes & Thoughts
+          <h1 className="text-5xl md:text-[5rem] font-clash font-medium text-neutral-900 tracking-tight leading-[1.1] select-none mb-6">
+            My <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-cyan-500">
+              blog
+            </span>
           </h1>
           <p className="text-lg text-slate-500">Documenting my journey through competitive programming and web development.</p>
         </motion.div>
