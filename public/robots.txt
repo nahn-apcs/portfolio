@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# Nếu bạn có tên miền riêng (ví dụ: https://thanhnhan.com), hãy bỏ comment dòng bên dưới và thay bằng tên miền của bạn
-# Sitemap: https://yourdomain.com/sitemap.xml
+Sitemap: https://ntnhan23.github.io/sitemap.xml

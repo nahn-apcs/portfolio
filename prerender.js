@@ -34,6 +34,20 @@ for (const url of routesToPrerender) {
   console.log('Pre-rendered:', filePath)
 }
 
+// Generate sitemap.xml
+const domain = 'https://ntnhan23.github.io';
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${routesToPrerender.map(url => `  <url>
+    <loc>${domain}${url === '/' ? '' : url}</loc>
+    <changefreq>${url === '/' ? 'daily' : 'weekly'}</changefreq>
+    <priority>${url === '/' ? '1.0' : '0.8'}</priority>
+  </url>`).join('\n')}
+</urlset>`;
+
+fs.writeFileSync(toAbsolute('dist/sitemap.xml'), sitemap, 'utf-8');
+console.log('Sitemap generated: dist/sitemap.xml');
+
 // Remove dist/server because we don't need it on Github Pages
 fs.rmSync(toAbsolute('dist/server'), { recursive: true, force: true })
 console.log('✅ Pre-rendering complete!')
